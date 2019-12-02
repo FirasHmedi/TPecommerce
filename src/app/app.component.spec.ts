@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tpecommerce'`, () => {
+  it(`should have as title 'appppp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('tpecommerce');
+    expect(app.title).toEqual('appppp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('tpecommerce app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('appppp app is running!');
   });
 });

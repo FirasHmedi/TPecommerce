@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -8,12 +7,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SigninComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,
-               private router: Router ) { }
+  constructor() { }
 
   ngOnInit() {
   }
-  onSubmit(f) {
 
-  }
 }

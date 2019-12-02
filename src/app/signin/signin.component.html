@@ -1,56 +1,27 @@
-<!-- Top content -->
-
-<div class="top-content" <!-- style="background-image: url(../../assets/images/bgLogin.jpg)" -->
-     xmlns="http://www.w3.org/1999/html">
-  <!-- Logo start
-
-
-  <div class="inner-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text">
-          <h1><strong></strong> Login For GFI training employee</h1>
+<form>
+        <div class="form-group">
+          <label for="Email1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" 
+          aria-describedby="emailHelp"> </div>
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" 
+          id="Password" minlength="8">
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 form-box">
-          <div class="form-top">
-            <div class="form-top-left">
-              <h3>Login to our web application</h3>
-            </div>
-            <div class="form-top-right">
-              <i class="fa fa-key"></i>
-            </div>
-          </div>
-          <div class="form-bottom">
-            <form  action="" method="post" (ngSubmit)="onSubmit(f)" #f="ngForm" class="login-form" ngNativeValidate>
-              <div class="form-group">
-                <div class="cols-sm-10">
-                  <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                    <input ngModel email #email="ngModel" type="email"  class="form-control" name="email" id="email"  placeholder="Enter your Email" required/>
-
-                  </div>
-                </div>
-              </div>
-              <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
-              <div class="form-group">
-                <div class="cols-sm-10">
-                  <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-                    <input ngModel type="password" #password="ngModel" class="form-control" name="password" id="password" minlength="6" placeholder="Enter your Password" required/>
-
-                  </div>
-                </div>
-              </div>
-              <span class="help-block" *ngIf="!password.valid && password.touched">Please enter a valid password!</span>
-              <button type="submit" [disabled]="f.invalid" class="btn">Sign in!</button>
-            </form>
-          </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-      </div>
-
-         </div>
-  </div>
-    -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+<div class="card">
+  
+  <hr>
+  <hr>
+  <strong>Si vous n'etes pas inscrit veuillez Créer un compte</strong>
 </div>
+<a   href='/register'>
+<button type="submit" class="btn btn-danger">
+  register
+</button>  
+</a>
