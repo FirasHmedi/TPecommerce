@@ -9,17 +9,17 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
-SearchStatut=new FormControl('');
 
+  SearchStatut = new FormControl('');
 
   constructor(private headerService:HeaderServiceService) { }
 
   ngOnInit() {
  //   this.SearchStatut='df'
   }
-onClick(ch:string){
-  this.headerService.SetSearchValue((this.SearchStatut).value);
-  console.log((this.SearchStatut).value);
-  
-}
+  onClick(ch:string){
+    this.headerService.SetSearchValue((this.SearchStatut).value);
+    console.log((this.SearchStatut).value);
+
+  }
 }

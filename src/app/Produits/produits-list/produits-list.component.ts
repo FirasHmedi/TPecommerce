@@ -14,23 +14,21 @@ export class ProduitsListComponent implements OnInit
   //searchValue=this.getSearchValue();
   search;
   PrixStatus;
+
   constructor(private produitService: ProduitService,private panierService:PanierService,
     private headerService:HeaderServiceService) { }
 
   ngOnInit() {
     this.produits = this.produitService.getAllProduits();
     this.search='';
-  this.PrixStatus="";
+    this.PrixStatus=null;
   }
 
-getSearchValue(){
-  console.log(this.headerService.getheaderSearch());
-  return(this.headerService.getheaderSearch());
-}
-  ajouter(pa:produit){
-    this.panierService.add_au_panier(pa);
-    console.log(this.panierService.getpanier());
-  }
+    getSearchValue(){
+      console.log(this.headerService.getheaderSearch());
+      return(this.headerService.getheaderSearch());
+    }
+
 
   AfficherProduitsCategorie(categorie:string){
     if(categorie=="")

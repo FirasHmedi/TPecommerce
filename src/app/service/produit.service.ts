@@ -29,6 +29,11 @@ export class ProduitService {
 
 }
 
+public getProduit(id : number){
+  console.log(this.produits[id-1]);
+  return this.produits[id-1];
+}
+
 
 /*
   existe_plusieurs_fois(list:produit[],p:produit):boolean{

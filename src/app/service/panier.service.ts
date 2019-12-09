@@ -10,7 +10,8 @@ private Produitspanier:produit[]=[
   constructor() { }
 
   add_au_panier(p: produit){
-    this.Produitspanier.push(p);
+      if(!this.Produitspanier.includes(p))
+        this.Produitspanier.push(p);
   }
   getpanier(){
     return(this.Produitspanier.slice());

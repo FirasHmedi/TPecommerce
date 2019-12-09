@@ -1,0 +1,42 @@
+img{
+     position: absolute;
+     top : 20%;
+     left: 7%;
+     height: 520px;
+     width: 520px;
+     border-radius: 10px;
+
+}
+
+#bigDiv{
+     background: #bdc3c7;
+     min-height: 90%;
+     padding-left : 5%;
+     padding-right : 5%;
+
+}
+
+#smallDiv{
+
+      position: absolute;
+      top : 23%;
+      left: 40%;
+      width: 750px;
+      height: 470px;
+      background : #3498db;
+      color : white;
+      font-size : 29px;
+      border-radius: 0;
+      padding-left : 3%;
+      padding-top: 2%;
+      border-radius: 10px;
+}
+
+a{
+
+  background: #2ecc71;
+  font-size : 24px;
+  border : 0;
+}
+
+ p{margin : 0;}

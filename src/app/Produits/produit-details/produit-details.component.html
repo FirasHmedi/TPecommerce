@@ -1,0 +1,25 @@
+
+
+<div id="bigDiv" >
+
+
+
+    <div id="smallDiv" >
+        <div class="card-body">
+          <h2 class="card-title">{{produit.ProduitName}}</h2>
+          <p class="card-text" style="font-size : 20px;">{{produit.ProduitDescription}}</p>
+          <p class="card-text">Prix : {{produit.prix}} Dt</p>
+          <p class="card-text">Disponibilite : {{produit.disponibilite}} </p>
+          <p style="margin : 0">Avis : </p>
+          <ul style="font-size : 20px">
+             <li>Ahmed : Ce produit m'interesse</li>
+             <li>Ali : J'ai acheté et je le regrette</li>
+             <li>Asma : C'est vraiment impressionant</li>
+          </ul>
+              <a class="btn btn-primary"   (click)="ajouter(produit)">Ajouter au Panier</a>
+        </div>
+    </div>
+
+    <img src="{{produit.ProduitImgPath}}" class="image" alt="...">
+
+</div>

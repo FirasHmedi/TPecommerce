@@ -1,5 +1,35 @@
+<table style="border-color:darkcyan;" >
+<div  *ngFor="let p of produitspanier">
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <tr>
+          <td>
+        <img src="{{p.ProduitImgPath}}" class="image" alt="...">
+          </td>
+        <td><h5>{{p.ProduitName}}</h5>
+            <tr>{{p.ProduitDescription}}</tr>
+            <tr>
+                 <hr><a class="btn btn-danger" style="color : white" (click)="supprimer(p)">Supprimer de Panier
+                  </a>
+              </tr>
+          </td>
+        <td><p> </p></td>
+        <td style="size: 30px;"><h4>
+          <span class="badge badge-primary list-group-item-success " style="size: 300px;">Disponible en stock</span></h4>
+        <tr style="size: 30px;">
+          <h1>
+          <span class="badge badge-primary " style="size: 300px;">{{p.prix}} Dt</span></h1>
+        </tr>
+        </td>
+    </div>
+    <button class="btn btn-primary" (click)='acheter(p)'>Passer La commande</button>
+  </div>
+</table>
 
 
+
+
+
+<!--
 
 <div id="bigDiv" >
     <div id="smallDiv" *ngFor="let p of produitspanier">
@@ -8,8 +38,11 @@
               <h5 class="card-title">{{p.ProduitName}}</h5>
               <p class="card-text">{{p.ProduitDescription}}</p>
               <p class="card-text">{{p.prix}} Dt</p>
-              <a class="btn btn-primary" (click)="Acheter(p)">Passer la commande
+              <a class="btn btn-primary" (click)="acheter(p)">Passer la commande
                 </a>
             </div>
     </div>
 </div>
+
+
+-->
