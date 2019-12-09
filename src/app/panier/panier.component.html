@@ -1,6 +1,6 @@
 
 
-
+<!--
 <div id="bigDiv" >
     <div id="smallDiv" *ngFor="let p of produitspanier">
             <img src="{{p.ProduitImgPath}}" class="image" alt="...">
@@ -13,3 +13,45 @@
             </div>
     </div>
 </div>
+-->
+<table style="border-color:darkcyan;" >
+<div  *ngFor="let p of produitspanier">
+    <div class="list-group-item d-flex justify-content-between align-items-center">
+      <tr>
+          <td>
+        <img src="{{p.ProduitImgPath}}" class="image" alt="...">
+          </td>
+        <td><h5>{{p.ProduitName}}</h5>
+            <tr>{{p.ProduitDescription}}</tr>
+            <tr>
+                 <hr><a class="btn btn-danger" (click)="Supprimer(p)">Supprimer de Panier
+                  </a>
+              </tr>
+          </td>
+        <td><p> </p></td>
+        <td style="size: 30px;"><h4>
+          <span class="badge badge-primary list-group-item-success " style="size: 300px;">Disponible en stock</span></h4>
+        <tr style="size: 30px;">
+          <h1>
+          <span class="badge badge-primary " style="size: 300px;">{{p.prix}} Dt</span></h1>
+        </tr>
+        </td>
+    </div>
+  </div>
+</table>
+<div *ngIf=""></div>
+<button class="btn btn-primary" (onclick)='ajouter()'>Passer La commande</button>
+<!--
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <img src="{{p.ProduitImgPath}}" class="image" alt="...">
+      <h5>{{p.ProduitName}}</h5>
+      <p>{{p.ProduitDescription}}</p>
+      <p>{{p.prix}} Dt</p>
+      <a class="btn btn-primary" (click)="Acheter(p)">Passer la commande
+        </a>
+    <span class="badge badge-primary badge-pill">{{p.prix}} Dt</span>
+  </li>
+</div>
+    
+</ul>
+-->

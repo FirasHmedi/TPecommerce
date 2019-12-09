@@ -24,5 +24,8 @@ constructor(private panierService:PanierService) {
     //   this.produits=this.panierService.getpanier();
 //console.log(this.produits);
  }
-
+ Supprimer(produit_a_supprimer:produit){
+   
+   this.panierService.getpanier().splice(this.panierService.getpanier().indexOf(produit_a_supprimer),1);
+ }
 }
