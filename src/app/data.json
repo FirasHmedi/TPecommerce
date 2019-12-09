@@ -1,0 +1,139 @@
+[
+    {
+    "ProduitId" : 1,
+    "ProduitName" : "Pc Asus" ,
+    "ProduitDescription" : "Pc avec processeur i5 6eme gén , 8Gég ram",
+    "prix" : 1100,
+    "ProduitImgPath" : "./assets/pcportable.jpg",
+    "categorie": "INFO"
+  },
+  {
+    "ProduitId" :2,
+    "ProduitName" : "Smart Tv" ,
+    "ProduitDescription" : "Télévision samsung 42°",
+    "prix" : 2000,
+    "ProduitImgPath" : "./assets/tv.jpg",
+    "categorie": "TVSON"
+  },
+   {
+    "ProduitId" :3,
+    "ProduitName" : "Camera sécurité" ,
+    "ProduitDescription" : "Caméra de sécurité trés fameuse",
+    "prix" : 400,
+    "ProduitImgPath" : "./assets/camerasecurite.jpg",
+    "categorie": "TVSON"
+  },
+  {
+    "ProduitId" :4,
+    "ProduitName" : "Samsung s9" ,
+    "ProduitDescription" : "Smartphone trés puissant avec beaucoup d'options",
+    "prix" : 1500,
+    "ProduitImgPath" : "./assets/s9.jpg",
+    "categorie": "TEL"
+  },
+  {
+    "ProduitId" :5,
+    "ProduitName" : "Iphone X" ,
+    "ProduitDescription" : "Apple Iphone X avec 64GB",
+    "prix" : 1700,
+    "ProduitImgPath" : "./assets/iphonex.jpg",
+    "categorie": "TEL"
+  },
+  {
+    "ProduitId" :6,
+    "ProduitName" : "Huawei P20 Lite" ,
+    "ProduitDescription" : "Le Huawei P20 Lite est le petit frère du Huawei P20 avec prix débordable",
+    "prix" : 800,
+    "ProduitImgPath" : "./assets/huaweip20.jpg",
+    "categorie": "TEL"
+  },
+  {
+    "ProduitId" :7,
+    "ProduitName" : "Reflex Canon EOS 6D Mark II" ,
+    "ProduitDescription" : "Caméra trés reconnue",
+    "prix" : 5500,
+    "ProduitImgPath" : "./assets/canoneos.jpg",
+    "categorie": "TVSON"
+  },
+  {
+    "ProduitId" :8,
+    "ProduitName" : "MacBook Pro" ,
+    "ProduitDescription" : "Processeur 6 cœurs à 2.6GHz , 512Go stockage",
+    "prix" : 7000,
+    "ProduitImgPath" : "./assets/mac.jpg",
+    "categorie": "INFO"
+  },
+  {
+    "ProduitId" :9,
+    "ProduitName" : "Tablette Versus V730 7 ",
+    "ProduitDescription" : "Ecran 7 IPS - Résolution 1024 x 600 pixels - Processeur Quad Core MTK 8321, 1.3 GHz - RAM 1 Go - Mémoire 8 Go  Android 6.0  ",
+    "prix" : 199,
+    "ProduitImgPath" : "./assets/t1.jpg",
+    "categorie": "INFO"
+  
+
+  },
+  {
+    "ProduitId" :10,
+    "ProduitName" : " Tablette Evertek EverPad E7224HG  ",
+    "ProduitDescription" : " Ecran 7 HD IPS - Résolution 600 x 1024 px - Processeur Quad Core MT8321D, 1.3 Ghz - RAM 1 - Mémoire 8 Go extensible via Micro SD up to 32 Go - Android 7.0 Nougat  ",
+    "prix" : 239,
+    "ProduitImgPath" : "./assets/t2.jpg",
+    "categorie": "INFO"
+  },
+  {
+    "ProduitId" :10,
+    "ProduitName" : "   Power Bank S-Link Swapp S75 / 7500 MAh / Gris & Vert ",
+    "ProduitDescription" : "Power Bank S-Link Swapp S75 - Puissance 7500 mAh - Dimensions 10.5 x 7 x 2 cm -",
+    "prix" : 66,
+    "ProduitImgPath" : "./assets/p1.jpg",
+    "categorie": "Stockage"
+ 
+  },
+  {
+    
+    "ProduitId" :11,
+    "ProduitName" : " Power Bank Ksix Métal PowerLive / 10000 MAh / 2 USB / Gold",
+    "ProduitDescription" : "Power Bank Ksix Métal PowerLive - Capacité: 10000 mAh - 2x USB - Poids: 210 g " ,
+    "prix" : 82,
+    "ProduitImgPath" : "./assets/p2.jpg",
+    "categorie": "Stockage"
+ 
+  },
+  {
+    "ProduitId" :12,
+    "ProduitName" : " Pc De Bureau Dell Optiplex 7050MT / I7 7è Gén / 4 Go   ",
+    "ProduitDescription" :"Processeur Intel Core i7-7700 7è Génération, up to 4.2 GHz, 8 Mo de mémoire cache - Mémoire 4 Go - Disque 1 To - Carte graphique Intel HD Graphics - Graveur DVD " , 
+    "prix" : 1266, 
+    "ProduitImgPath" : "./assets/pc.jpg",
+    "categorie": "Pc"
+  },
+  {
+    "ProduitId" :13,
+    "ProduitName" : " Souris Optique Sans Fil Promate Clix-6 / Noir",
+    "ProduitDescription" :"Souris Optique Sans Fil Promate Clix-6 - Connexion sans fil de 2,4 GHz - Plage de fonctionnement 10m" , 
+    "prix" : 11, 
+    "ProduitImgPath" : "./assets/s1.jpg",
+    "categorie": "Pc"
+  },
+  {
+    
+    "ProduitId" :14,
+    "ProduitName" : " Souris Verticale Pro Evoluent C Right Pour Droitier",
+    "ProduitDescription" :"Souris Verticale Pro Evoluent C Right - Pour utilisateur Droitier - Dpi réglable - 5x Boutons programmables - Capteur optique réglable - Interface USB - Elimine la torsion dans l’avant-bras ",
+     "prix" : 337, 
+    "ProduitImgPath" : "./assets/s2.jpg",
+    "categorie": "Pc"
+  },
+  {"ProduitId" :15,
+    "ProduitName" : "Clavier USB Everest KB-871U / Qwerty",
+    "ProduitDescription" :"  Clavier USB Everest KB-871U / Qwerty - Interface USB - 108x Boutons - Longueur du câble 135cm - Dimensions 44 x 13 x 2,2",
+     "prix" : 15, 
+    "ProduitImgPath" : "./assets/c1.jpg",
+    "categorie": "Pc"
+  }
+  
+
+
+
+]

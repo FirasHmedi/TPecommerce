@@ -1,8 +1,32 @@
-<div class="card" style="width: 25rem;" *ngFor="let p of produits">
-        <img src="{{p.ProduitImgPath}}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{p.ProduitName}}</h5>
-          <p class="card-text">{{p.ProduitDescription}}</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+ 
+<nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light"  style="margin : 0.5%;">
+  <button type="button" class="btn btn-outline-primary" style="margin-right: 2%"(click)="AfficherProduitsCategorie('')">Toutes les catégories</button>
+  <button type="button" class="btn btn-outline-primary" style="margin-right: 2%"(click)="AfficherProduitsCategorie('INFO')">Informatique</button>
+  <button type="button" class="btn btn-outline-primary" style="margin-right: 2%" (click)="AfficherProduitsCategorie('TEL') ">TÉLÉPHONE & Tablettes</button>
+  <button type="button" class="btn btn-outline-primary" style="margin-right: 2%" (click)="AfficherProduitsCategorie('TVSON')">TV-Son-Photos</button>
+  </nav>
+<div>  
+  <div style="padding:20px 350px;background:cadetblue;">
+  <input class="form-control  " 
+  style="width: 300px ;" type="search"
+   placeholder="Search...." 
+   aria-label="Search"
+   [(ngModel)]="search"
+    >
+    <input type="number" style="width: auto;"
+    [(ngModel)]="PrixStatus" value="0" placeholder="Prix Maximum" ><strong style="color: white;">DT</strong>
+</div>
+</div>
+
+  <div id="bigDiv" >
+      <div   id="smallDiv" *ngFor="let p of produits | filter:search:'ProduitName':prix:PrixStatus">
+              <img src="{{p.ProduitImgPath}}" class="image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{p.ProduitName}}</h5>
+                <p class="card-text">{{p.ProduitDescription}}</p>
+                <p class="card-text">{{p.prix}} Dt</p>
+                <a class="btn btn-primary" (click)="ajouter(p)">Ajouter au Panier</a>
+
+              </div>
       </div>
+</div>
