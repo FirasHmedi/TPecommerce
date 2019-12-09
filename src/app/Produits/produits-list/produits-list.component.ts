@@ -12,7 +12,7 @@ export class ProduitsListComponent implements OnInit
 {
   produits:produit[];
   //searchValue=this.getSearchValue();
-  search;
+  search:string;
   PrixStatus;
 
   constructor(private produitService: ProduitService,private panierService:PanierService,

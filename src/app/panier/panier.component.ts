@@ -41,4 +41,3 @@ constructor(private panierService:PanierService,private snackBar : MatSnackBar,p
     }
 
 }
- 

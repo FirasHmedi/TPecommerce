@@ -14,6 +14,7 @@ private Produitspanier:produit[]=[
         this.Produitspanier.push(p);
   }
   getpanier(){
-    return(this.Produitspanier.slice());
+    return(this.Produitspanier);
   }
+
 }
