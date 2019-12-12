@@ -20,6 +20,12 @@
         </div>
     </div>
 
-    <img src="{{produit.ProduitImgPath}}" class="image" alt="...">
+    <img id="origImg" src="{{produit.ProduitImgPath}}"  (click)="openModal(template)" class="image" alt="...">
 
+
+      <ng-template #template   >
+          <div class="modal-body" class="templ">
+            <img src="{{produit.ProduitImgPath}}" id="bigImg"  alt="...">
+          </div>
+     </ng-template>
 </div>

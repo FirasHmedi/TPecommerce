@@ -1,10 +1,22 @@
-img{
+#origImg{
      position: absolute;
      top : 20%;
      left: 7%;
      height: 520px;
      width: 520px;
      border-radius: 10px;
+
+}
+
+#bigImg{
+  width : 800px !important;
+  height : 700px !important;
+}
+
+.templ{
+  position: absolute;
+  top : 0;
+  left : -100px;
 
 }
 

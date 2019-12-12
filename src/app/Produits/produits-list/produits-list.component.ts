@@ -3,6 +3,8 @@ import { produit } from '../Produit.model';
 import { ProduitService } from './../../service/produit.service';
 import { PanierService } from 'src/app/service/panier.service';
 import { HeaderServiceService } from 'src/app/service/header-service.service';
+import {MatSnackBar} from '@angular/material';
+
 @Component({
   selector: 'app-produits-list',
   templateUrl: './produits-list.component.html',
@@ -16,7 +18,7 @@ export class ProduitsListComponent implements OnInit
   PrixStatus;
 
   constructor(private produitService: ProduitService,private panierService:PanierService,
-    private headerService:HeaderServiceService) { }
+    private headerService:HeaderServiceService ,private snackBar : MatSnackBar) { }
 
   ngOnInit() {
     this.produits = this.produitService.getAllProduits();
@@ -35,6 +37,15 @@ export class ProduitsListComponent implements OnInit
     this.produits = this.produitService.getAllProduits();
     else
     this.produits = this.produitService.getProduitsParCategorie(categorie);
+  }
+
+
+  ajouter(pa:produit){
+    this.snackBar.open(pa.ProduitName+" ajouté au panier" ,"", {
+        duration: 2500,
+     });
+    this.panierService.add_au_panier(pa);
+  //  console.log(this.panierService.getpanier());
   }
 
 }

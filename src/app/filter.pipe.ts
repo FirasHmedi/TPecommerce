@@ -12,11 +12,14 @@ export class FilterPipe implements PipeTransform {
 
     const FilterResult=[];
     for(const item of value){
-      if(((item["ProduitName"].indexOf(SearchStatus))!=-1)&&((item["prix"]<=PrixStatus)||((PrixStatus===null))))
+      let prodName=item["ProduitName"].toUpperCase();
+      let searchstatus=SearchStatus.toUpperCase();
+  //    console.log(prodName+" "+searchstatus);
+      if(((prodName.indexOf(searchstatus))!=-1)&&((item["prix"]<=PrixStatus)||((PrixStatus===null))))
       {
         FilterResult.push(item);
       }
-      console.log(PrixStatus);
+    //  console.log(PrixStatus);
     }
 
     return FilterResult;

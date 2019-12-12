@@ -14,15 +14,15 @@
      background: #bdc3c7;
      padding-left : 5%;
      padding-right : 5%;
- 
+
 }
 
 #smallDiv{
       width: 350px;
-      max-height: 600px;
+      height : auto;
       margin : 0 auto;
       background : #3498db;
       color : white;
       border-radius: 10px;
-
+     
 }

@@ -8,8 +8,9 @@
         <td><h5>{{p.ProduitName}}</h5>
             <tr>{{p.ProduitDescription}}</tr>
             <tr>
-                 <hr><a class="btn btn-danger" style="color : white" (click)="supprimer(p)">Supprimer de Panier
+                <br> <hr><a class="btn btn-danger" style="color : white" (click)="supprimer(p)">Supprimer de Panier
                   </a>
+                    <button mat-raised-button class="btn btn-primary" style="margin-left : 20px;" (click)='acheter_Produit(p)'>Passer La commande</button>
               </tr>
           </td>
         <td><p> </p></td>
@@ -21,26 +22,6 @@
         </tr>
         </td>
     </div>
-    <button class="btn btn-primary" (click)='acheter(p)'>Passer La commande</button>
+
   </div>
 </table>
-
-
-
-
-<!--
-<div id="bigDiv" >
-    <div id="smallDiv" *ngFor="let p of produitspanier">
-            <img src="{{p.ProduitImgPath}}" class="image" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{p.ProduitName}}</h5>
-              <p class="card-text">{{p.ProduitDescription}}</p>
-              <p class="card-text">{{p.prix}} Dt</p>
-              <a class="btn btn-primary" (click)="acheter(p)">Passer la commande
-                </a>
-            </div>
-    </div>
-</div>
-
-
--->

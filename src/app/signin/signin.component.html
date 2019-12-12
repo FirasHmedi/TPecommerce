@@ -1,31 +1,26 @@
 
   <div style="background: #bdc3c7; height : 90%;width : 100%;padding-top: 2%;">
-      <form style=" background : #3498db;
+      <form #f="ngForm"
+      style=" background : #3498db;
       margin-left : 17%;
       margin-right: 17%;
-       color : white;
+      color : white;
       height : 80%;
-      border : 5px solid white;padding : 5% 5% 3% 5%;border-radius : 10px;font-size : 25px;  " >
+      border : 5px solid white;padding : 5% 5% 3% 5%;border-radius : 10px;font-size : 25px;
+    " >
         <div class="form-group" >
           <label for="Email1">Email address</label>
-          <input type="email" class="form-control"
-          name="email"
-          id="exampleInput"
-          aria-describedby="emailHelp"
-          ngModel
-          required
-          email
-          #email
-          >
+          <input type="email" class="form-control"    name="email"  #email  ngModel  required  >
         </div>
+
         <div class="form-group" style="margin-bottom : 5%;">
           <label for="Password">Password</label>
-          <input type="password" class="form-control"
-          id="Password" minlength="8" required>
+          <input type="password" class="form-control"    id="Password" minlength="8" name="ngModel"    ngModel    #password   required>
         </div>
+        
         <div style="display : inline" >
-
-        <button type="submit"  class="btn btn-success"  style="font-size : 25px;float : left;margin-left : 10%;" (click)="signIn()" >Se connecter</button>
+        <button [disabled]="f.invalid" type="submit"  class="btn btn-success"  style="font-size : 25px;float : left;margin-left : 10%;"
+        (click)="signIn()" >Se connecter</button>
 
           <p routerLink='/' style="float : right;margin-right : 10%;" >Créer un compte ?</p>
      </div>

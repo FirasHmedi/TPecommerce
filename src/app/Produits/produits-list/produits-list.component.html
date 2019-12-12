@@ -23,12 +23,14 @@
   <div id="bigDiv" >
       <div   id="smallDiv" *ngFor="let p of produits | filter : search : PrixStatus">
               <img src="{{p.ProduitImgPath}}" class="image" alt="..."  [routerLink]="['/produitDetails', p.ProduitId]"  >
-              <div class="card-body"  [routerLink]="['/produitDetails', p.ProduitId]"  >
+              <div class="card-body"   style="padding-bottom : 10px;" >
                 <h5 class="card-title">{{p.ProduitName}}</h5>
                 <p class="card-text">{{p.ProduitDescription}}</p>
                 <p class="card-text">{{p.prix}} Dt</p>
-                <a class="btn btn-primary" style="background: #2ecc71;font-size : 17px;border : 0;"  >Connaitre le produit</a>
-
+                <a class="btn btn-primary" style="background: #2ecc71;font-size : 17px;border : 0;"
+                [routerLink]="['/produitDetails', p.ProduitId]" >Connaitre le produit</a>
+                <a class="btn btn-primary" style="background: #e74c3c;font-size : 17px;border : 0;margin-top : 15px;z-index : 3000;"
+                (click)="ajouter(p)" >Ajouter au panier</a>
               </div>
       </div>
 </div>

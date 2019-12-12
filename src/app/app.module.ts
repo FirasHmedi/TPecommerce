@@ -21,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProduitDetailsComponent } from './Produits/produit-details/produit-details.component';
 import { CommandeComponent } from './commande/commande.component';
 import { MatSnackBarModule } from '@angular/material';
-
+import { MatDialogModule } from '@angular/material';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 const appRoutes: Routes =[
   {path: 'signin' , component: SigninComponent}
@@ -37,16 +38,17 @@ const appRoutes: Routes =[
     FilterPipe,
     ProduitDetailsComponent,
     CommandeComponent
-  ],
+  ],entryComponents:[CommandeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     OverlayModule,
     MatSnackBarModule,
+    MatDialogModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
+    ModalModule.forRoot(),
     FormsModule,
-
     ReactiveFormsModule
 
   ],
