@@ -1,7 +1,6 @@
 # Tp Ecommerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<img src="https://github.com/HmediFiras/TPecommerce/blob/master/screenshots/cap1.PNG" />
+<img src="https://github.com/HmediFiras/TPecommerce/blob/master/screenshots/cap2.PNG" />
+<img src="https://github.com/HmediFiras/TPecommerce/blob/master/screenshots/cap3.PNG" />
